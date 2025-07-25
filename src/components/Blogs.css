@@ -1,0 +1,76 @@
+
+/* Page container */
+.blogs-page {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  font-family: Arial, sans-serif;
+}
+
+/* Page title */
+.blogs-page h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* List of blogs */
+.blogs-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Individual blog item */
+.blogs-item {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.blogs-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+/* Blog title */
+.blogs-item h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.25rem;
+  color: #e74c3c;
+}
+
+/* Blog excerpt */
+.blogs-item p {
+  flex-grow: 1;
+  margin: 0 0 1rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* Video link */
+.blogs-item a {
+  align-self: flex-start;
+  color: #2c3e50;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.blogs-item a:hover {
+  color: #e74c3c;
+}
+
+/* No posts message */
+.blogs-page p {
+  text-align: center;
+  font-size: 1rem;
+  color: #777;
+}
