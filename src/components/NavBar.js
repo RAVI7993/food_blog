@@ -1,4 +1,3 @@
-// File: src/components/NavBar.js
 import React, { useState, useContext } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../context/AuthContext'; // your context
@@ -30,8 +29,9 @@ export default function NavBar() {
   const privateLinks = [
     { to: '/dashboard', label: 'Dashboard' },
     { to: '/blogs',     label: 'Blogs'  },
+    { to: '/create',     label: 'Create'  },
     { to: '/profile',   label: 'Profile'   },
-    { to: '/favourites',label: 'Favourites'},
+    // { to: '/favourites',label: 'Favourites'},
   ];
 
   return (

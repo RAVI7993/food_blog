@@ -1,0 +1,100 @@
+.create-blog-page {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  font-family: Arial, sans-serif;
+}
+
+.create-blog-page h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.create-blog-form .form-group {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.create-blog-form label {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.create-blog-form label span {
+  color: #e74c3c;
+}
+
+.create-blog-form input,
+.create-blog-form textarea {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.create-blog-form small.error {
+  color: #e74c3c;
+  margin-top: 0.25rem;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  font-size: 1.1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.2s;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn:hover:not(:disabled) {
+  background-color: #c0392b;
+}
+
+.error-banner {
+  background: #fdecea;
+  padding: 0.75rem;
+  border: 1px solid #f5c6cb;
+  color: #721c24;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.create-blog-advanced {
+  max-width: 800px;
+  margin: 2rem auto;
+  font-family: Arial, sans-serif;
+}
+.row {
+  display: flex; gap: 1rem; margin-bottom: 1rem;
+}
+.field {
+  flex: 1; display: flex; flex-direction: column;
+}
+.sub-row {
+  display: flex; gap: 0.5rem; align-items: center; margin-bottom: 0.5rem;
+}
+.nutrition {
+  border: 1px solid #ddd; padding: 1rem; margin-bottom: 1rem;
+}
+.image-preview {
+  max-width: 200px; margin-top: 0.5rem; border-radius: 4px;
+}
+.btn {
+  background: #e74c3c; color: white; border: none;
+  padding: 0.75rem 1.5rem; cursor: pointer; border-radius: 4px;
+}
+.error { color: #e74c3c; font-size: 0.9rem; }
+

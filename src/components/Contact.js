@@ -20,22 +20,34 @@ export default function Contact() {
   };
 
   const handleSubmit = async e => {
-    e.preventDefault();
-    const validation = validate();
-    if (Object.keys(validation).length) {
-      setErrors(validation);
-      return;
-    }
+  e.preventDefault();
+  const validation = validate();
+  if (Object.keys(validation).length) {
+    setErrors(validation);
+    return;
+  }
 
-    try {
-      // simulate API call
-      await new Promise(res => setTimeout(res, 800));
+  try {
+    const response = await fetch('http://localhost:5050/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(form),
+    });
+
+    const data = await response.json();
+    if (response.ok) {
       setStatus('success');
       setForm({ name: '', email: '', message: '' });
-    } catch {
+    } else {
       setStatus('error');
+      console.error('Contact API error:', data.message);
     }
-  };
+  } catch (err) {
+    console.error('Network error:', err);
+    setStatus('error');
+  }
+};
+
 
   return (
     <div className="contact-page">
